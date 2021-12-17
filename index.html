@@ -11,7 +11,6 @@
 
     <!--Java Script-->
     <script src="https://kit.fontawesome.com/07ceae913b.js" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
 
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -19,46 +18,36 @@
 
     <!--Freepik-->
     <a href='https://www.freepik.com/vectors/background'></a>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!--Navigation Bar-->
     <nav>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                <img src="assets/img/Logo.png" alt="Logo Patricia Ho" width="180" height="50">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#achievement">Achievement</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#collegelife">College Life</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#dailylife">Daily Life</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#skill">Skill</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#myproject">My Project</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#contact-me-page">Contact</a>
-                    </li>
-                </ul>
+        <!-- <div class="container-fluid"> -->
+            <!-- <div class="menu-bar"> -->
+                <div class="logo">
+                    <a href="#logo"><img src="assets/img/Logo.png"></a>
                 </div>
-            </div>
-            </nav>
+
+                <ul>
+                    <li><a href="covid19.html">Covid-19 Data</a></li>
+                    <li><a href="contactme.html">Contact</a></li>
+                    <li><a href="index.html">About</a></li>
+                </ul>
+
+                <div class="menu-toggle">
+                    <input type ="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
     </nav>
 
     <!--Header-->
@@ -69,7 +58,7 @@
                     <div class="row">
                         <div class="col-md-8 col-sm-12">
                             <div class="imgforheader">
-                                <img src="assets/img/Header tech no bg square.png">
+                                <img src="assets/img/Header tech no bg square gif.gif">
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
@@ -101,7 +90,7 @@
                     <div class="col-6">
                         <div class="image">
                             <div class="image-about">
-                                <img src="assets/img/Myself-edit.png" class="img fluid" alt="Myself-1">
+                                <img src="assets/img/Myself-edit.png" loading="lazy" class="img fluid" alt="Myself-1">
                             </div>
                         </div>
                     </div>
@@ -112,7 +101,7 @@
                             <p>My name is Patricia Ho. You can call me Patricia. I'm a freshman IT student from Pradita University. </p>
                             <p> I was born in Jakarta, on November 17th 2003. So I'll be 18 this year. On these days, I'd love to learn new things, including coding.
                                 I am a really dicipline, hard-working, full of curiosity, innovative, and creative person. I could work individually or with group well.</p>
-                            <p>As an uni student, I regularly learn about many things, especially in Coding. I also have experience in Editing video, mostly Raw style.
+                            <p>As a uni student, I regularly learn about many things, especially in Coding. I also have experience in Editing video, mostly Raw style.
                                 recently, I want to learn using Candy style. Fyi, I was an Alight Motion editor and will learn about After Effect soon.
                                 I also focus on doing basic animation. </p>
                             <p>When i was a high school student, I was joining student council as a secretary. I got a lot of experience, including competition.
@@ -137,9 +126,9 @@
                             <h1>Achievement</h1>
                         </div>
 
-                        <div class="col-md-3 col-sm-12">
-                            <div class="card" style="width: 100%; height: 100%;">
-                                <img src="./assets/img/Trophy.jpg" class="card-img-top" alt="Trophy">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card" style="width: 95%; height: 100%; background-image:linear-gradient(to bottom, rgb(77, 0, 77),black,black); color : white;border: 1px solid white;">
+                                <img src="./assets/img/Trophy-pink-neon.png" loading="lazy" class="card-img-top" alt="Trophy">
                                 <div class="card-body">
                                     <h6 class="card-title">
                                         Academic Achievement (School)
@@ -153,12 +142,9 @@
                             </div>
                         </div>
 
-                        <div class="col-md">
-                        </div>
-
-                        <div class="col-md-3 col-sm-12">
-                            <div class="card" style="width: 100%; height: 100%;">
-                                <img src="./assets/img/Star.jpg" class="card-img-top" alt="Trophy">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card" style="width: 95%; height: 100%; background-image:linear-gradient(to bottom, rgb(77, 0, 77),black,black); color : white;border: 1px solid white;">
+                                <img src="./assets/img/Star-pink-neon.png" loading="lazy" class="card-img-top" alt="Trophy">
                                 <div class="card-body">
                                     <h6 class="card-title">
                                         Organization
@@ -170,12 +156,9 @@
                             </div>
                         </div>
 
-                        <div class="col-md">
-                        </div>
-
-                        <div class="col-md-3 col-sm-12">
-                            <div class="card" style="width: 100%; height: 100%;">
-                                <img src="./assets/img/Crown.jpg" class="card-img-top" alt="Trophy">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card" style="width: 95%; height: 100%; background-image:linear-gradient(to bottom, rgb(77, 0, 77),black,black); color : white;border: 1px solid white;">
+                                <img src="./assets/img/Crown-pink-neon.png" loading="lazy" class="card-img-top" alt="Trophy">
                                 <div class="card-body">
                                     <h6 class="card-title">
                                         Academic Achievement (Non School)
@@ -204,7 +187,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
                         <div class="image-code">
-                            <img src="./assets/img/Code.jpg">
+                            <img src="./assets/img/College-pink-neon.png" loading="lazy">
                         </div>
                     </div>
 
@@ -222,8 +205,8 @@
                                 But I'm certain enough that I could surpass them. I'm sure that the process is worth to face.
                             </p>
                             <br>
-                            <p onmouseover="mouseOverToDailyLife(this)" onmouseout="mouseOutHere(this)" onclick="location.href='#dailylife'"><a href="#dailylife" class="button-header">Next</a></p>
-                        </div>
+                        </div> 
+                        <p onmouseover="mouseOverToDailyLife(this)" onmouseout="mouseOutHere(this)" onclick="location.href='#dailylife'"><a href="#dailylife" class="button-header">Next</a></p>
                     </div>
                 </div>
             </div>
@@ -293,7 +276,7 @@
                         <h5>Coding (General)</h5>
                     </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
                         </div>
                     <br>
 
@@ -301,7 +284,7 @@
                         <h5>Video Editing</h5>
                     </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
                         </div>
                     <br>
                     
@@ -309,7 +292,7 @@
                         <h5>Microsoft Word, Excel, Powerpoint</h5>
                     </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
                         </div>
                     <br>
 
@@ -317,7 +300,7 @@
                         <h5>Animation</h5>
                     </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
                         </div>
                     <br>
 
@@ -325,7 +308,7 @@
                         <h5>Indonesian (General)</h5>
                     </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
                         </div>
                     <br>
 
@@ -333,7 +316,7 @@
                         <h5>English (General)</h5>
                     </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
                         </div>
                     <br>
 
@@ -341,7 +324,7 @@
                         <h5>Chinese (General)</h5>
                     </div>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
                         </div>
                     <br>
                     

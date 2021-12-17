@@ -1,46 +1,241 @@
 * {
-    text-decoration: none;
     margin: 0px;
     padding: 0px;
-    background-color: black;
+
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
-    background-color: black;
+    background-color: rgb(19, 17, 17);
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-fluid{
+nav {
+    background-color: rgb(19, 17, 17);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    color : white;
+    font-family: 'DM Sans', sans-serif;
+    height: 70px;
+    align-items: center;
     z-index: 1;
     border-bottom: 1px solid white;
-    box-shadow: 0 6px 8px 0 rgba(255,0,230,0.5);
+    box-shadow: 0 6px 8px 0 rgba(255,0,230,0.8);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
 }
 
-.navbar-dark {
-    background-color: black;
+.logo img{
+    width: 65%;
+    float: left;
 }
 
-.nav-item{
-    padding-right: 20px;
+nav ul {
     display: flex;
-    float: right;
+    flex-direction: row-reverse;
+    list-style: none;
+    padding-top: 20px;
+    width : 60%;
+    float: right
+}
+
+nav ul li a {
+    color : white;
+    text-decoration: none;
+    font-size: 0.95em;
+    margin-left: 40px;
+}
+
+nav ul li a:hover {
+    color : magenta;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+nav ul li a:active {
+    border-radius: 4px;
+    border-color: white;
+    color: black;
+    background-color: white;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/*Hamburger menu*/
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height : 20px;
+    justify-content:space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width : 41px;
+    height : 28px;
+    left: -5.8px;
+    top: -3px;
+    opacity : 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width : 28px;
+    height :3px;
+    border-radius: 3px;
+    background-color: white;
+    transition: all 0.4s;
+}
+
+/*Hamburger Menu Animation*/
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: rgb(236, 113, 236);
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: rgb(236, 113, 236);
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+/* Responsive Breakpoint */
+
+/*ukuran tablet*/
+@media screen and (max-width : 992px) {
+    nav ul {
+        width : 50%;
+    }
+
+    header .col-md-4.col-sm-12{
+        transform: translate(0, 10%);
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+    nav ul {
+        width : 70%;
+    }
+
+    header .col-md-4.col-sm-12{
+        transform: translate(0, 10%);
+    }
+}
+
+/*ukuran mobile*/
+@media screen and (max-width : 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .achievement-card {
+        padding-left: 28px;
+    }
+
+    nav {
+        width: 100%;
+        position: fixed;
+    }
+
+    header .imgforheader img{
+        width: 100%;
+        margin-top: 70  px;
+        align-items:unset;
+    }
+
+    nav ul {
+        text-decoration: none;
+        padding: 0;
+        position: fixed;
+        top : 73.1px;
+        width : 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-image: url(./imgcss/pink-hexagon.png);
+        z-index: -1;
+        transform: translateY(-100%);
+        transition: all 1s;
+        opacity: 0;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+
+    nav ul.slide{
+        opacity : 1;
+        transform: translateY(0);
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .header .container .row {
+        color:white;
+        text-align: center;
+    }
+
+    header img{
+        margin-top: 70px;
+    }
+    
+    .image-about img{
+        width: 150%;
+    }
+
+    #collegelife{
+        text-align: center;
+    }
+
+    .contact-title{
+        margin-top: 60px;
+    }
+    
+    a.button-header{
+        text-align: center;
+    }
 }
 
 header{
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    background-color: black;
     height: auto;
     width: auto;
+    background-image: url(./imgcss/star.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: justify;
 }
 
+header .col-md-4{
+    transform: translate(0, 30%);
+}
+
 header .col-md-4 .headertitle {
-    padding-top: 250px;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header .col-md-4 .headerparagraph {
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
 }
 
 header .imgforheader img{
@@ -63,6 +258,7 @@ a.button-header{
     font-weight: bold;
     text-decoration: none;
     transition-duration: 0.4s;
+    align-items: center;
 }
 
 a.button-header:hover {
@@ -78,11 +274,16 @@ main{
     text-align: center;
     color:white;
     padding-top: 70px;
+    padding-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .about-myself{
+    padding-top: 30px;
     text-align: center;
     color:white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
 }
 
 .image-about{
@@ -92,7 +293,6 @@ main{
 }
 
 .image-about img{
-    display: relative;
     margin: auto;
     width: 70%;
     height: 70%;
@@ -105,29 +305,44 @@ main{
     align-items: center;
 }
 
-.achievement-card .col-md-3 {
+.achievement-card .col-md-4 {
     align-items: center;
     display: inline;
     margin-top: 10px;
     padding-left: 10px;
+    background-color: black;
 }
 
 .achievement-title{
     text-align: center;
     color:white;
     padding-top: 100px;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 30px;
 }
 
 .achievement-card .card-title{
     text-align: center;
-    color : white;
-    padding: 3px;
-    border-bottom: 1px solid white;
+    padding: 5px;
+    border-bottom: 3px solid white;
+    color: #fff;
+    text-shadow:
+        0 0 3px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(212, 0, 255),
+        0 0 82px rgb(212, 0, 255),
+        0 0 92px rgb(212, 0, 255),
+        0 0 102px rgb(212, 0, 255),
+        0 0 151px rgb(212, 0, 255);
+
 }
 
 .achievement-card .card-text{
     text-align: center;
     color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
 }
 
 .achievement-card .col-12{
@@ -146,7 +361,14 @@ main{
     height : 75%;
 }
 
-.collegelife-description{
+.collegelife-description p{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
+}
+
+.collegelife-description h1{
+    font-family: 'Quicksand', sans-serif;
     color: white;
 }
 
@@ -158,6 +380,7 @@ main{
     color: white;
     text-align: center;
     margin-bottom: 70px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .dailylife-list{
@@ -177,6 +400,7 @@ main{
     color: white;
     text-align: center;
     font-weight: bold;
+    font-family: 'Inconsolata', monospace;
 }
 
 .button-to-skill .col-12 .button{
@@ -190,11 +414,16 @@ main{
     color:white;
     text-align: center;
     margin-top: 70px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .skill-progress-heading{
     color:white;
     font-style: italic;
+}
+
+[role=progressbar] {
+    background-image: linear-gradient(to left, rgb(234, 0, 255), rgb(255, 147, 255));
 }
 
 .button-to-myproject .button{
@@ -208,6 +437,7 @@ main{
     color:white;
     text-align: center;
     margin-top: 70px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .myproject-sample{
@@ -230,11 +460,13 @@ main{
     color:white;
     padding-top: 60px;
     padding-bottom : 10px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .contact-me-description-before{
     text-align: center;
     color:white;
+    font-family: 'Inconsolata', monospace;
 }
 
 .button-to-contact-html .button{
@@ -248,6 +480,14 @@ main{
 .display-the-date {
     padding-bottom: 50px;
     text-align: center;
+}
+
+.display-the-date .date-title{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.display-the-date p{
+    font-family: 'Inconsolata', monospace;
 }
 
 .date-title{
@@ -290,6 +530,7 @@ footer{
 
 .footer-section-1{
     color:white;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .logo-footer{
@@ -299,7 +540,7 @@ footer{
 }
 
 .logo-footer img{
-    width : 60%;
+    width : 50%;
 }
 
 .logo-link{
@@ -327,11 +568,18 @@ footer .logo-link i:hover{
     text-align: center;
     color:white;
     padding-top: 50px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .contact-description{
     padding: 20px 0;
     text-align: center  ;
+    z-index: -1;
+    font-family: 'Inconsolata', monospace;
+}
+
+form{
+    font-family: 'Quicksand', sans-serif;
 }
 
 .col-12 .button-for-send{
@@ -359,3 +607,4 @@ a.button-send:hover {
     background-color: white; 
     color: black;
 }
+

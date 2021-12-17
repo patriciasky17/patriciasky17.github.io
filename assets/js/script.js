@@ -11,7 +11,7 @@ function anotherFormSent() {
 }
 
 function mouseOverSendMe(obj) {
-  obj.style.cssText="background: white; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:black; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 12 0px; text-align: center; ";
+  obj.style.cssText="background: white; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:black; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 120px; text-align: center; ";
   obj.innerHTML = "Send Me!"
 }
 
@@ -21,7 +21,7 @@ function mouseOutSend(obj) {
 }
 
 function mouseOverToAbout(obj) {
-  obj.style.cssText="background: white; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:black; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 170px; text-align: center; ";
+  obj.style.cssText="background: white; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:black; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 170px; text-align: center; display: flex; justify-content: center; align-items: center;";
   obj.innerHTML = "Go to About";
 }
 
@@ -51,11 +51,21 @@ function mouseOverToMyProject(obj) {
 }
 
 function mouseOverToContactMe(obj) {
-  obj.style.cssText="background: white; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:black; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 190px; text-align: center";
+  obj.style.cssText="background: white; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:black; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 190px; text-align: center;";
   obj.innerHTML = "Go to Contact Me"
 }
 
 function mouseOutHere(obj) {
-  obj.style.cssText="background: none; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:white; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 90px; text-align: center;";
+  obj.style.cssText="background: none; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:white; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 90px; text-align: center; display: flex; justify-content: center; align-items: center;";
   obj.innerHTML = "Next";
 }
+
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
+const all = document.body;
+
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');
+});
+
+
