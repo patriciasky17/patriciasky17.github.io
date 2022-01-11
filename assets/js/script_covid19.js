@@ -34,9 +34,11 @@ function toDateTime(secs) {
     return t;
 }
 
-// gak dipakai lagi
-// .then(res => {res.json()})
-// .then (data => console.log(data));
-// .then((data => {
-//     document.getElementById("Confirmed").src = data.confirmed.value;
-// }))
+var loader = document.querySelector("#preloader");
+console.log(loader);
+
+window.addEventListener('load', vanish);
+
+function vanish() {
+  loader.classList.add("dissapear");
+}

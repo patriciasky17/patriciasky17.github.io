@@ -69,3 +69,11 @@ menuToggle.addEventListener('click', function() {
 });
 
 
+var loader = document.querySelector("#preloader");
+console.log(loader);
+
+window.addEventListener('load', vanish);
+
+function vanish() {
+  loader.classList.add("dissapear");
+}

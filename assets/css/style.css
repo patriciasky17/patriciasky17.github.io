@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-
 }
 
 body{
@@ -9,6 +8,85 @@ body{
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#preloader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.preloader-logo{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%)
+}
+
+.dissapear{
+    animation: vanish 2s forwards;
+}
+
+@keyframes vanish{
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#path-one{
+    animation: animateOne -0.5s linear 1s infinite alternate;
+}
+
+#path-two{
+    animation: animateOne -0.5s linear 1s infinite alternate;
+}
+
+#path-three{
+    animation: animateOne -0.5s linear 1s infinite alternate;
+}
+
+#path-four{
+    animation: animateOne -0.5s linear 1s infinite alternate;
+}
+
+#path-five{
+    animation: animateOne -0.5s linear 1s infinite alternate;
+}
+
+#path-six{
+    animation: animateOne -0.5s linear 1s infinite alternate;
+}
+
+#path-seven{
+    animation: animateOne -0.5s linear 1s infinite alternate;
+}
+
+#path-eight{
+    animation: animateOne -0.5s linear 1s infinite alternate;
+}
+
+#path-circle{
+    animation: animateOne -0.5s linear 1s infinite alternate;
+}
+
+#path-text{
+    animation: animateOne -0.5s linear 1s infinite alternate;
+}
+
+@keyframes animateOne {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
 
 nav {
     background-color: rgb(19, 17, 17);
@@ -157,7 +235,7 @@ nav ul li a:active {
 
     header .imgforheader img{
         width: 100%;
-        margin-top: 70  px;
+        margin-top: 70px;
         align-items:unset;
     }
 
@@ -208,6 +286,7 @@ nav ul li a:active {
     }
     
     a.button-header{
+        margin: auto;
         text-align: center;
     }
 }
@@ -385,18 +464,17 @@ main{
 
 .dailylife-list{
     margin: 0px 0px 0px 0px;
-    align-items: center;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
 
-.dailylife-list figure img{
+.dailylife-section img{
     width : 100%;
     height : 75%;
     display: flex; 
 }
 
-.dailylife-list figure figcaption{
+.dailylife-section p{
     color: white;
     text-align: center;
     font-weight: bold;
