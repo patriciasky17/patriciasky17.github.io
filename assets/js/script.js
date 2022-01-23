@@ -20,11 +20,6 @@ function mouseOutSend(obj) {
   obj.innerHTML = "Send!"
 }
 
-function mouseOverToAbout(obj) {
-  obj.style.cssText="background: white; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:black; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 170px; text-align: center; display: flex; justify-content: center; align-items: center;";
-  obj.innerHTML = "Go to About";
-}
-
 function mouseOverToAchievement(obj) {
   obj.style.cssText="background: white; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:black; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 190px; text-align: center;";
   obj.innerHTML = "Go to Achievement";
@@ -35,10 +30,6 @@ function mouseOverToCollegeLife(obj) {
   obj.innerHTML = "Go to College Life";
 }
 
-function mouseOverToDailyLife(obj) {
-  obj.style.cssText="background: white; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:black; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 170px; text-align: center";
-  obj.innerHTML = "Go to Daily Life";
-}
 
 function mouseOverToSkill(obj) {
   obj.style.cssText="background: white; border-radius: 10px; border: 2px double white; padding: 15px 20px 15px 20px; color:black; cursor: pointer; font-weight: bold; text-decoration: none; transition-duration: 0.4s; width: 170px; text-align: center";

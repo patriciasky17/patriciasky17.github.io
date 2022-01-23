@@ -23,6 +23,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <!--AOS CSS + JS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -53,7 +58,7 @@
 
                 <ul>
                     <li><a href="covid19.html">Covid-19 Data</a></li>
-                    <li><a href="contactme.html">Contact</a></li>
+                    <li><a href="contactme.html">Contact(WIP)</a></li>
                     <li><a href="index.html">About</a></li>
                 </ul>
 
@@ -74,17 +79,20 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-sm-12">
-                            <div class="imgforheader">
-                                <img src="assets/img/Header tech no bg square gif.gif">
+                            <div data-aos="fade-right" data-aos-duration = "3000">
+                                <div class="imgforheader">
+                                    <img src="assets/img/Header tech no bg square gif.gif">
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
-                            <h1 class="headertitle">Hello There!</h1>
-                            <br>
-                            <p class="headerparagraph">I'm Patricia Ho. I'm currently studying at Pradita University majoring Information Technology.</p>
-                            <p class="headerparagraph">Want to know more? Scroll down below to discover more or click the button to continue.</p>
-                            <br>
-                            <p onmouseover="mouseOverToAbout(this)" onmouseout="mouseOutHere(this)" onclick="location.href='#about'"><a href="#about" class="button-header">Next</a></p>
+                            <div data-aos="fade-left" data-aos-duration = "3000">
+                                <h1 class="headertitle">Hello There!</h1>
+                                <br>
+                                <p class="headerparagraph">I'm Patricia Ho. I'm currently studying at Pradita University majoring Information Technology.</p>
+                                <p class="headerparagraph">Want to know more? Scroll down below to discover more.</p>
+                                <br>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -96,42 +104,42 @@
     <!--About-->
         <section id="about">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="about-myself-title">
-                            <h1>About Me!</h1>
+                <div data-aos="fade-up" data-aos-duration = "2000">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="about-myself-title">
+                                <h1>About Me!</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                    </div>
-                    <div class="col-6">
-                        <div class="image">
-                            <div class="image-about">
-                                <img src="assets/img/Myself-edit.png" loading="lazy" class="img fluid" alt="Myself-1">
+                        <div class="col-3">
+                        </div>
+                        <div class="col-6">
+                            <div class="image">
+                                <div class="image-about">
+                                    <img src="assets/img/Myself-edit.png" loading="lazy" class="img fluid" alt="Myself-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                        </div>
+                        <div class="col-12">
+                            <div class="about-myself">
+                                <p>My name is Patricia Ho. You can call me <b>Patricia. </b> </p>
+                                <p> I was born in Jakarta, on November 17th 2003. So I'll be 19 this year. On these days, I'd love to learn new things, including coding.</p>
+                                <p>I'm a first year college student at Pradita University majoring in Information Technology. I have been learning front end engineering since July 2021. 
+                                    I'm a creative, disciplined, and hardworking person who has ambition to develop the skill that I have. Passionate about designing a website.  I could work individually or with group well. </p>
+                                <p>When i was a high school student, I was joining student council as a secretary. I got a lot of experience, including competition.
+                                    I was pretty much active back then. Beside that, I still could manage my time to improve my soft skill.</p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="button-to-achievement">
+                                <p onmouseover="mouseOverToAchievement(this)" onmouseout="mouseOutHere(this)" onclick="location.href='#achievement'"><a href="#achievement" class="button-header">Next</a></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                    </div>
-                    <div class="col-12">
-                        <div class="about-myself">
-                            <p>My name is Patricia Ho. You can call me Patricia. I'm a freshman IT student from Pradita University. </p>
-                            <p> I was born in Jakarta, on November 17th 2003. So I'll be 18 this year. On these days, I'd love to learn new things, including coding.
-                                I am a really dicipline, hard-working, full of curiosity, innovative, and creative person. I could work individually or with group well.</p>
-                            <p>As a uni student, I regularly learn about many things, especially in Coding. I also have experience in Editing video, mostly Raw style.
-                                recently, I want to learn using Candy style. Fyi, I was an Alight Motion editor and will learn about After Effect soon.
-                                I also focus on doing basic animation. </p>
-                            <p>When i was a high school student, I was joining student council as a secretary. I got a lot of experience, including competition.
-                                I was pretty much active back then. Beside that, I still could manage my time to improve my soft skill.</p>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="button-to-achievement">
-                            <p onmouseover="mouseOverToAchievement(this)" onmouseout="mouseOutHere(this)" onclick="location.href='#achievement'"><a href="#achievement" class="button-header">Next</a></p>
-                        </div>
-                    </div>
-                    
+                </div>
             </div>
         </section>
         
@@ -139,52 +147,71 @@
             <div class="container">
                 <div class="achievement-card">
                     <div class="row">
-                        <div class="achievement-title">
-                            <h1>Achievement</h1>
+                        <div data-aos="fade-up" data-aos-duration = "2000">
+                            <div class="achievement-title">
+                                <h1>Achievement</h1>
+                            </div>
                         </div>
 
                         <div class="col-md-4 col-sm-12">
-                            <div class="card" style="width: 95%; height: 100%; background-image:linear-gradient(to bottom, rgb(77, 0, 77),black,black); color : white;border: 1px solid white;">
-                                <img src="./assets/img/Trophy-pink-neon.png" loading="lazy" class="card-img-top" alt="Trophy">
-                                <div class="card-body">
-                                    <h6 class="card-title">
-                                        Academic Achievement (School)
-                                    </h6>
-                                    <p class="card-text">
-                                    Top of the class since grade 10 until grade 12
-                                    <br>
-                                    Rank 1st for class year 2020/2021
-                                    </p>
+                            <div class="card" style="border: 2px solid white;">
+                                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                    <img src="./assets/img/Trophy-pink-neon.png" loading="lazy" class="card-img-top" alt="Trophy">
+                                    <div class="card-body">
+                                        <h6 class="card-title">
+                                            Academic Achievement (School)
+                                        </h6>
+                                        <p class="card-text">
+                                        Top of the class since grade 10 until grade 12
+                                        <br><br>
+                                        Rank 1st for class year 2020/2021
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4 col-sm-12">
-                            <div class="card" style="width: 95%; height: 100%; background-image:linear-gradient(to bottom, rgb(77, 0, 77),black,black); color : white;border: 1px solid white;">
-                                <img src="./assets/img/Star-pink-neon.png" loading="lazy" class="card-img-top" alt="Trophy">
-                                <div class="card-body">
-                                    <h6 class="card-title">
-                                        Organization
-                                    </h6>
-                                    <p class="card-text">
-                                    1st Secretary in Student Council of Maria Mediatrix Senior High School
-                                    </p>
+                            <div class="card" style="border: 2px solid white;">
+                                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                    <img src="./assets/img/Star-pink-neon.png" loading="lazy" class="card-img-top" alt="Trophy">
+                                    <div class="card-body">
+                                        <h6 class="card-title">
+                                            Organization
+                                        </h6>
+                                        <p class="card-text">
+                                        1st Secretary in Student Council of Maria Mediatrix Senior High School (2019/2020)
+                                        <br><br>
+                                        Member of Creative Media Division in Student Association of Information Technology since September 2021.
+                                        <br><br>
+                                        One of the Committee in Equipment & Logistics Division on Graduation Ceremony 2021.
+                                        <br><br>
+                                        One of the Committee in Technical Division on Graduation Ceremony 2021.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-4 col-sm-12">
-                            <div class="card" style="width: 95%; height: 100%; background-image:linear-gradient(to bottom, rgb(77, 0, 77),black,black); color : white;border: 1px solid white;">
-                                <img src="./assets/img/Crown-pink-neon.png" loading="lazy" class="card-img-top" alt="Trophy">
-                                <div class="card-body">
-                                    <h6 class="card-title">
-                                        Academic Achievement (Non School)
-                                    </h6>
-                                    <p class="card-text">
-                                    Kumon Math Completer in October 2018
-                                    <br>
-                                    2nd Rank English Storytelling on 2017
-                                    </p>
+                            <div class="card" style="border: 2px solid white;">
+                                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                                    <img src="./assets/img/Crown-pink-neon.png" loading="lazy" class="card-img-top" alt="Trophy">
+                                    <div class="card-body">
+                                        <h6 class="card-title">
+                                            Academic Achievement (Non School)
+                                        </h6>
+                                        <p class="card-text">
+                                        Kumon Math Completer in October 2018
+                                        <br><br>
+                                        Advanced Student Honour Roll 2017 (4 Years and Above Grade Level Student)
+                                        <br><br>
+                                        Advanced Student Honour Roll 2018 (5 Years and Above Grade Level Student)
+
+                                        <br><br>
+                                        2nd Rank English Storytelling on 2017
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -203,68 +230,28 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
-                        <div class="image-code">
-                            <img src="./assets/img/College-pink-neon.png" loading="lazy">
+                        <div data-aos="fade-up" data-aos-duration = "1500">
+                            <div class="image-code">
+                                <img src="./assets/img/College-pink-neon.png" loading="lazy">
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-md-8 col-sm-12">
-                        <div class="collegelife-description">
-                            <h1>College Life</h1>
-                            <br>
-                            <p>I took Information Technology major in Pradita University.
-                                I plan to join more workshops and organization so I would have more experience in future.
-                                Honestly, these plans are kinda risky for me since I have to manage my time more.
-                                But, it would not stop me for reaching my dream as a game developer.
-                            </p>
-                            <p>
-                                Compare to other student, I'm nothing better based on coding skill since I learn it from beginning.
-                                But I'm certain enough that I could surpass them. I'm sure that the process is worth to face.
-                            </p>
-                            <br>
-                        </div> 
-                        <p onmouseover="mouseOverToDailyLife(this)" onmouseout="mouseOutHere(this)" onclick="location.href='#dailylife'"><a href="#dailylife" class="button-header">Next</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Daily Life-->
-        <section id="dailylife">
-            <div class="container">
-                <div class="dailylife-section">
-                    <div class="row">
-                        <div class="dailylife-title">
-                            <h1>Daily Life</h1>
-                        </div>
-
-                        <div class="dailylife-list">
-                            <div class="col-md-3 col-sm-12">
-                                <img src="./assets/img/cycling (1).png"/>
-                                <p>Cycling</p>
-                            </div>
-                            
-                            <div class="col-md-3 col-sm-12">
-                                <img src="./assets/img/Code girl.png"/>
-                                <p>Learn to code</p>
-                            </div>
-                            
-                            <div class="col-md-3 col-sm-12">
-                                <img src="./assets/img/volunteer hands.png"/>
-                                <p>Volunteering</p>
-                            </div>
-                            
-                            <div class="col-md-3 col-sm-12">
-                                <img src="./assets/img/child and parents.png"/>
-                                <p>Help my parents</p>
-                            </div>
-                        </div>
-
-                        <div class="button-to-skill">
-                            <div class="col-12">
-                                <div class="button">
-                                    <p onmouseover="mouseOverToSkill(this)" onmouseout="mouseOutHere(this)" onclick="location.href='#skill'"><a href="#skill" class="button-header">Next</a></p>
-                                </div>
+                        <div data-aos="fade-up" data-aos-duration = "1500">
+                            <div class="collegelife-description">
+                                <h1>College Life</h1>
+                                <br>
+                                <p>I took Information Technology major in Pradita University.
+                                    I plan to join more workshops and organization so I would have more experience in future.
+                                    Honestly, these plans are kinda risky for me since I have to manage my time more.
+                                    But, it would not stop me for reaching my dream as a front-end developer.
+                                </p>
+                                <p>
+                                    Compare to other student, I'm nothing better based on coding skill since I learn it from beginning.
+                                    But I'm certain enough that I could surpass them. I'm sure that the process is worth to face.
+                                </p>
+                                <br>
                             </div>
                         </div>
                     </div>
@@ -276,70 +263,72 @@
         <section id="skill">
             <div class="container">
                 <div class="skill-progress">
-                    <div class="skill-progress-title">
-                        <h1>My Skill</h1>
-                        <p class="note">Note : This skill is based on my experience and perspective.</p>
-                    </div>
-                    
-                    <div class="skill-progress-heading">
-                        <h5>Coding (General)</h5>
-                    </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+                    <div data-aos="fade-up" data-aos-duration = "1500">
+                        <div class="skill-progress-title">
+                            <h1>My Skill</h1>
+                            <p class="note">Note : This skill is based on my experience and perspective.</p>
                         </div>
-                    <br>
+                        
+                        <div class="skill-progress-heading">
+                            <h5>HTML, CSS, Javascript</h5>
+                        </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                            </div>
+                        <br>
 
-                    <div class="skill-progress-heading">
-                        <h5>Video Editing</h5>
-                    </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                        <div class="skill-progress-heading">
+                            <h5>Video Editing</h5>
                         </div>
-                    <br>
-                    
-                    <div class="skill-progress-heading">
-                        <h5>Microsoft Word, Excel, Powerpoint</h5>
-                    </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                            </div>
+                        <br>
+                        
+                        <div class="skill-progress-heading">
+                            <h5>Microsoft Word, Excel, Powerpoint</h5>
                         </div>
-                    <br>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                            </div>
+                        <br>
 
-                    <div class="skill-progress-heading">
-                        <h5>Animation</h5>
-                    </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                        <div class="skill-progress-heading">
+                            <h5>Animation</h5>
                         </div>
-                    <br>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                            </div>
+                        <br>
 
-                    <div class="skill-progress-heading">
-                        <h5>Indonesian (General)</h5>
-                    </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                        <div class="skill-progress-heading">
+                            <h5>Indonesian (General)</h5>
                         </div>
-                    <br>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                            </div>
+                        <br>
 
-                    <div class="skill-progress-heading">
-                        <h5>English (General)</h5>
-                    </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                        <div class="skill-progress-heading">
+                            <h5>English (General)</h5>
                         </div>
-                    <br>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                            </div>
+                        <br>
 
-                    <div class="skill-progress-heading">
-                        <h5>Chinese (General)</h5>
-                    </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                        <div class="skill-progress-heading">
+                            <h5>Chinese (General)</h5>
                         </div>
-                    <br>
-                    
-                    <div class="button-to-myproject">
-                        <div class="button">
-                            <p onmouseover="mouseOverToMyProject(this)" onmouseout="mouseOutHere(this)" onclick="location.href='#myproject'"><a href="#myproject" class="button-header">Next</a></p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                            </div>
+                        <br>
+                        
+                        <div class="button-to-myproject">
+                            <div class="button">
+                                <p onmouseover="mouseOverToMyProject(this)" onmouseout="mouseOutHere(this)" onclick="location.href='#myproject'"><a href="#myproject" class="button-header">Next</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>   
@@ -351,13 +340,26 @@
         <div class="container">
             <div class="myproject-title">
                 <h1>My Project!</h1>
-                <p>Here's one of my animation and editing project, I usually upload it to my Instagram account. But I also uploaded it to my Youtube channel</p>
+                <p>Here's project that I've made until now</p>
                 <br>
             </div>
 
-            <div class="myproject-sample">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/iXf2HX0Q4RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="myproject-sample">
+                        <iframe width="50%" height="315" src="https://www.youtube.com/embed/iXf2HX0Q4RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <div class="myproject-sample">
+                        <a href="https://github.com/ahmedAbdulrazag/time-tracking-dashboard-main">
+                            <img src="./assets/img/Project interface.png" class="project-interface" alt="time-tracking-dashboard">
+                        </a>
+                    </div>
+
+                </div>
             </div>
+
             <div class="button-to-contact">
                 <div class="button">
                     <p onmouseover="mouseOverToContactMe(this)" onmouseout="mouseOutHere(this)" onclick="location.href='#contact-me-page'"><a href="#contact-me-page" class="button-header">Next</a></p>
@@ -378,7 +380,7 @@
             </div>
             <div class="button-to-contact-html">
                 <div class="button">
-                    <p><a href="contactme.html" class="button-header">Contact Me!</a></p>
+                    <p><a href="contactme.html" class="disabled" class="button-header">Contact Me!</a></p>
                 </div>
             </div>
         </div>
@@ -403,7 +405,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
                         <div class="footer-section-1">
-                            <p>© 2021, Patricia Ho</p>
+                            <p>© 2022, Patricia Ho</p>
                         </div>
                     </div>
 
@@ -432,7 +434,9 @@
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
      <script src="assets/js/script.js"></script>
+     <script>AOS.init();</script>
 
 </body>
 </html>
